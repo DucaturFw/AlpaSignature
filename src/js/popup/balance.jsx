@@ -54,10 +54,6 @@ export default class Balance extends React.Component {
             <div className="balance__address">
               <div className="value">{this.state.address}</div>
             </div>
-            <div className="balance__value">
-              <div className="title">Balance:</div>
-              <span className="value">{this.getBalance()}</span>
-            </div>
           </div>
         </main>
         <div className="balance__actions">

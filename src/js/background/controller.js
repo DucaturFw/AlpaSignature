@@ -11,7 +11,15 @@ class Controller {
   init() {
     console.log("init ctrl");
 
-    wallet.init();
+    wallet.init().then(() => {
+      // wallet.execContract('init_sale', {
+      //   pat_id: 'eewfew',
+      //   region: 'moscow',
+      //   exp_date: "check",
+      //   resale: 'efe',
+      //   terms: 'efef',
+      // })
+    });
     messaging.init();
     this.adddListeners();
   }

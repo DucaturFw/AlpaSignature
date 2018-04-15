@@ -1,7 +1,7 @@
 const axios = require('axios');
 const formData = require('form-data-urlencoded');
 
-const host = 'http://localhost:17301';
+const host = 'http://192.168.0.210:17301';
 
 module.exports = {
     getuid: function () {
@@ -91,6 +91,8 @@ module.exports = {
             url: `${host}/api/v2/prepare/${name}`,
             data: payload
         };
+
+        console.log(options);
 
         return new Promise((resolve) => {
             axios(options).then(res => resolve(res.data));

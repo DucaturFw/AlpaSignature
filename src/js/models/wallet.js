@@ -7,9 +7,7 @@ class Apla_Wallet {
     }
 
     init() {
-        return this.login().then(res => {
-            console.log(this.info);
-        });
+        return this.login();
     }
 
     async login() {
@@ -58,7 +56,7 @@ class Apla_Wallet {
 }
 
 const wallet = new Apla_Wallet({
-    priv: '947653f9f9552a4207f176b3f2d74c412c574f8ff8d5400b89a75f9c90b5d7d3',
+    priv: 'a1fe16bd2f463f4a98b9783a6105c0ced8c457ceff8272e1dfc709d446e02959',
 });
 
 export default wallet;
