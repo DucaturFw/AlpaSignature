@@ -1,7 +1,7 @@
 const axios = require('axios');
 const formData = require('form-data-urlencoded');
 
-const host = 'http://192.168.25.19:17301';
+const host = 'http://localhost:17301';
 
 module.exports = {
     getuid: function () {
